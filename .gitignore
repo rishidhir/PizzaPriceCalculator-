@@ -1,22 +1,13 @@
-# Compiled class file
-*.class
+import java.util.*;
+public class Exercise2 {
 
-# Log file
-*.log
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		System.out.println("Enter the diameter of the pizza in inches: ");
+		String number = kb.nextLine();
+		double doubleanswer = Double.parseDouble(number);
+		System.out.println("The cost of making the pizza is: " + "$" + (0.75 + 1.00 +(0.05*(doubleanswer*doubleanswer))));
 
-# BlueJ files
-*.ctxt
+	}
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+}
